@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { BookOverview } from 'app/models/bookOverview.model';
+import {MatTabsModule} from '@angular/material/tabs';
 // import { BookEditService } from 'src/app/services/book-edit.service';
 import { BookService } from 'app/services/book.service';
 
@@ -10,10 +11,5 @@ import { BookService } from 'app/services/book.service';
 })
 export class BooksPageComponent {
   selectedBook: BookOverview | undefined;
- // constructor(private bookEditService: BookEditService) {}
 
-  onEditBook(book: BookOverview) {
-    console.log('onEditBook in bookPage entered');
-    this.selectedBook = book;
-  }
 }

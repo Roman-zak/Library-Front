@@ -20,7 +20,7 @@ export class BookListItemComponent {
     dialogRef!: TemplateRef<any>;
 
     @Input() book?:BookOverview;
-   @Output() editBookEvent = new EventEmitter<BookOverview>();
+    @Output() editBookEvent = new EventEmitter<BookOverview>();
     constructor(private bookService: BookService, public dialog: MatDialog) {
 
       this.bookDetalized={};
@@ -48,15 +48,11 @@ export class BookListItemComponent {
   }
 
     editBook() {
-      console.log("clicked, book"+this.book+"is passed");
-
-      // this.bookEditService.selectedBook = new BehaviorSubject<BookOverview|undefined>(this.book);
-      
+      console.log("clicked, book"+this.book+"is passed");      
     }
     openCompDialog() {
       const myCompDialog = this.dialog.open(ViewBookComponent, { data: this.bookDetalized});
       myCompDialog.afterClosed().subscribe((res) => {
-        // Data back from dialog
         console.log({ res });
       });
     }

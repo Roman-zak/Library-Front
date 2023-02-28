@@ -1,10 +1,9 @@
-<!-- <p>book-list-item works!</p> -->
 <div class="book-list-item">
-  <img class="cover" *ngIf="book != undefined" src="{{ book.cover }}" />
+    <img class="cover" *ngIf="book != undefined" src="{{ book.cover }}" />
     <h3>{{book?.title}}</h3>
     <p class="reviews">Reviews: {{ book?.reviewsNumber }}</p>
     <p class="rating">Rating: {{ book?.rating }}</p>
     <div class="buttons">
-      <button >Edit</button>
-      <button mat-button (click)="openCompDialog()">View</button>
+    <button >Edit</button>
+    <button mat-button (click)="openCompDialog()">View</button>
 </div>

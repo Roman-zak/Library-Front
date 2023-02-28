@@ -1,4 +1,10 @@
 <div>
     <app-edit-book></app-edit-book>
+    <mat-tab-group>
+      <mat-tab label="All"> <app-book-list recommendedMode="all"></app-book-list> </mat-tab>
+      <mat-tab label="Recommended"> 
+        <app-book-list recommendedMode="recommended" ></app-book-list> 
+      </mat-tab>
+    </mat-tab-group>
     <app-book-list></app-book-list>
-  </div>
+</div>
