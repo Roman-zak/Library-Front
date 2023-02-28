@@ -97,4 +97,19 @@ export class EditBookComponent {
       }
 
     }
+    convertImage(event: any): void {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          if(reader.result){
+            const base64Image = reader.result.toString().split(',')[1];
+           // Assign the base64-encoded image to the book's cover property
+            this.book.cover = base64Image;
+          }
+
+        };
+        reader.readAsDataURL(file);
+      }
+    }
 }

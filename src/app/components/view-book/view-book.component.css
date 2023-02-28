@@ -1,0 +1,102 @@
+
+.book-card {
+    overflow-y: auto;
+    max-height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .book-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .book-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .book-icon .cover {
+    height: 200px;
+    width: 150px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .book-icon .cover img {
+    height: 100%;
+    width: auto;
+  }
+  
+  .book-icon .statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .book-icon .statistics div {
+    margin-bottom: 10px;
+  }
+  
+  .book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+  
+  .book-content-title h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .book-content-subtitle h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #666;
+  }
+  
+  .book-content-text div {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .book-reviews {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .review-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .review-card div:first-child {
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
