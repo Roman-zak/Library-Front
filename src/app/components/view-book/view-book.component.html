@@ -1,1 +1,39 @@
-<p>view-book works!</p>
+  <div class="book-card">
+    <div><h1>Details</h1></div>
+    <br>
+    <div class="book-info">
+      <div class="book-icon">
+        <div class="cover">
+          <img src="{{ mydata.cover }}" />
+        </div>
+        <div class="statistics">
+          <div><b>Rating : {{ mydata.rating}}</b></div>
+          <div><b>Reviews : {{ mydata.reviews.length }}</b></div>
+        </div>
+        <div class="spacer"></div>
+      </div>
+
+      <div class="book-content">
+        <div class="book-content-title">
+          <h3>{{ mydata.title }}</h3>
+        </div>
+        <div class="book-content-subtitle">
+          <h5
+            >{{ mydata.author }}, {{ mydata.genre }}</h5
+          >
+        </div>
+        <div class="book-content-text">
+          <div>{{ mydata.content }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="book-reviews">
+      <div class="review-card" *ngFor="let item of mydata.reviews">
+        <div>Reviewer {{ item.reviewer }}</div>
+        <div>{{ item.message }}</div>
+     
+      </div>
+    </div>
+  </div>
+<button mat-button (click)="closeDialog()">Close</button>

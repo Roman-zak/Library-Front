@@ -1,0 +1,63 @@
+
+  .book-list-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis: calc(50% - 10px);
+    height: 100px;
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    column-gap: 1vh;
+  }
+  
+  .book-list-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .book-list-item .reviews, .book-list-item .rating {
+    font-size: 1rem;
+    margin: auto 0 0;
+  }
+  
+  .book-list-item .reviews {
+    order: 1;
+  }
+  
+  .book-list-item .rating {
+    order: 2;
+  }
+  
+  .book-list-item .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 80px;
+  }
+  
+  .book-list-item .buttons button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 5px;
+  }
+  
+  .book-list-item .buttons button:first-child {
+    margin-left: 0;
+  }
+  .cover {
+    height: 100%;
+    width:  50%;
+  }

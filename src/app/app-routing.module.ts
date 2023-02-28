@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {BookListComponent} from './components/book-list/book-list.component';
+import {BooksPageComponent} from './components/books-page/books-page.component';
 import {ViewBookComponent} from './components/view-book/view-book.component';
 const routes: Routes = [
-  { path: '', redirectTo: 'tutorials', pathMatch: 'full' },
-  { path: 'book-list', component: BookListComponent },
+  { path: '', redirectTo: 'books-page', pathMatch: 'full' },
+  { path: 'books-page', component: BooksPageComponent },
   { path: 'view-book/:id', component: ViewBookComponent }
 ];
 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule] 
 })
 export class AppRoutingModule { }
